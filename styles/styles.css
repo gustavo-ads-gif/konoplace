@@ -8,25 +8,25 @@
 }
 
 :root{
-    --white-text:#000000 /*#FFFFFF*/;
-    --dark-100:#1C1C1C;
-    --bg-dark:#DCD8D8;/*#0D0D0D;*/
+    --bg:white /*#FFFFFF*/;
+    --text:black;
+    --dark-100:#DCD8D8;
+    
     --gray-50:#DCD8D8; /*#262626*/;
     --gray-30:#302C2C;
     --orange:#F97A2D;
     --red:#FF5A58;
     --blue:#00A4D9;
     --green:#05FF00;
+}
 
-    --black-text:#000000;
-    --dark-100:#DCD8D8;
-    --bg-white: #DCD8D8;
-    --gray-50:#DCD8D8; /*#262626*/;
-    --gray-30:#302C2C;
+.text-white{
+    color: #F97A2D;
 }
 
 body{
-    background-color: var(--bg-dark);
+    background-color: var(--bg);
+    color:var(--text);
 }
 
 
@@ -36,14 +36,14 @@ li{
 
 a{
     text-decoration: none;
-    color:var(--white-text);
+    color:var(--text);
     transition:0.5s;
     opacity: 0.8;
 }
 
 a:hover{
     opacity: 1;
-    color:var(--white-text);
+    color:var(--text);
 }
 
 
@@ -58,7 +58,7 @@ a:hover{
     transition: 0.5s;
     opacity: 0.8;
 
-    color:var(--white-text);
+    color:var(--text);
 }
 
 .form-control:hover{
@@ -72,7 +72,7 @@ a:hover{
     border:0;
     opacity: 1;
 
-    color:var(--white-text);
+    color:var(--text);
 }
 
 .btn-primary{
@@ -96,7 +96,7 @@ a:hover{
 
 .card-body{
     background-color: var(--gray-50);
-    color:var(--white-text);
+    color:var(--text);
     
     
 }
@@ -113,23 +113,23 @@ a:hover{
 
 .btn-green{
     background-color: var(--green);
-    color:var(--white-text);
+    color:var(--text);
 }
 
 .btn-danger{
     background-color: var(--red);
-    color:var(--white-text);
+    color:var(--text);
 }
 
 .btn-info{
     background-color: var(--blue);
-    color:var(--white-text);
+    color:var(--text);
     border:var(--blue) solid 1px;
 }
 
 .btn-info:hover{
     background-color: var(--blue);
-    color:var(--white-text);
+    color:var(--text);
     border:var(--blue) solid 1px;
 }
 
@@ -151,12 +151,12 @@ a:hover{
 }
 
 .table-side{
-    background-color:var(--white-text);
+    background-color:var(--text);
     padding:0.3rem;
 }
 
 .table-right{
-    background-color:var(--white-text);
+    background-color:var(--text);
     padding:0.3rem;
 
     width: 65.84px;
@@ -173,4 +173,8 @@ a:hover{
 .main-content{
     background-color: var(--bg-dark);
     
+}
+
+img:hover{
+    cursor: pointer;
 }
